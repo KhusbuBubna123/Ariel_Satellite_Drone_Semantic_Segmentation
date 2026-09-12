@@ -1,4 +1,6 @@
 # Arial Image Semantic Segmentation using UNet Architecture.
+
+
 In this project, arial satellite images were divided into 6 semantic regions as follows:
 1) Building: #3C1098 (Deep royal blue, dark iris, or vivid indigo)
 2) Land (unpaved area): #8429F6 (Vibrant Purple)
@@ -7,17 +9,19 @@ In this project, arial satellite images were divided into 6 semantic regions as 
 5) Water: #E2A929 (Orange)
 6) Unlabeled: #9B9B9B (Gray).
 
-
+An example satellite Image and its corresponding Semnatic Segmenatation Masks:
+<img width="797" height="644" alt="image_part_001" src="https://github.com/user-attachments/assets/a0925987-4563-45ce-9424-700ec51ed178" />
+<img width="797" height="644" alt="image_part_001" src="https://github.com/user-attachments/assets/2a753704-22ca-4552-af8f-123fa00dcbe4" />
 
 The UNet architecture consisting of Encoder and Decoder was used for semantic segmentation of ariel satellite images. The 
 network was trained for 15 epochs. Also SAM(Segmenent Anything Model) architecture could also have been used. But in this
 project, UNet architecture was used for semantic segmentation.
 
 # Dataset Description
-Humans in the Loop is publishing an open access dataset annotated for a joint project with the Mohammed Bin Rashid Space Center in Dubai, the UAE.
+Humans in the Loop is publishing an open access dataset annotated for a joint project with the Mohammed Bin Rashid Space Center in Dubai, the UAE. 
 
 **Content** \
-The dataset consists of aerial imagery of Dubai obtained by MBRSC satellites and annotated with pixel-wise semantic segmentation in 6 classes. The total volume of the dataset is 72 images grouped into 6 larger tiles. The classes are:
+The dataset (source:Kaggle) consists of aerial imagery of Dubai obtained by MBRSC satellites and annotated with pixel-wise semantic segmentation in 6 classes. The total volume of the dataset is 72 images grouped into 6 larger tiles. The classes are:
 
 1) Building: #3C1098
 2) Land (unpaved area): #8429F6
@@ -34,7 +38,7 @@ The predictions of semantic segmenatation obtained on a sample ariel satellite i
 <img width="993" height="339" alt="Predictions_Test_Image_Satellite" src="https://github.com/user-attachments/assets/787b355a-f369-4063-9835-8f16be8b3948" />
 <img width="993" height="339" alt="Prections_Test_Image_Satelitte" src="https://github.com/user-attachments/assets/b90ce241-84e7-418b-a2c9-60d2a2f195c6" />
 The predictions on test image obtained were not good as compared to the ground truth semantic segmentation
-since the Unet model was trained for a very less no. of epochs(only 15 epochs) due to lack to time of GPU resources.
+since the Unet model was trained for a very less no. of epochs(only 15 epochs) due to lack to time and GPU resources.
 
 After training the UNet model for 15 epochs, the training and validation loss obtained were as follows:
 <img width="584" height="455" alt="Training ValidationLoss" src="https://github.com/user-attachments/assets/0f3fdcef-3439-4e25-8516-9684b14618a4" />
