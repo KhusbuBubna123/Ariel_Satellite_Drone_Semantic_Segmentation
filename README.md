@@ -10,8 +10,9 @@ In this project, arial satellite images were divided into 6 semantic regions as 
 6) Unlabeled: #9B9B9B (Gray).
 
 An example satellite Image and its corresponding Semnatic Segmenatation Masks: \
+<img width="150" height="180" alt="image_part_001" src="https://github.com/user-attachments/assets/2a753704-22ca-4552-af8f-123fa00dcbe4" />
 <img width="150" height="180" alt="image_part_001" src="https://github.com/user-attachments/assets/a0925987-4563-45ce-9424-700ec51ed178" />
-<img width="150" height="180" alt="image_part_001" src="https://github.com/user-attachments/assets/2a753704-22ca-4552-af8f-123fa00dcbe4" /> \
+ \
 
 The UNet architecture consisting of Encoder and Decoder was used for semantic segmentation of ariel satellite images. The 
 network was trained for 15 epochs. Also SAM(Segmenent Anything Model) architecture could also have been used. But in this
